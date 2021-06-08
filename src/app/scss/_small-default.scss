@@ -7,9 +7,34 @@ html{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+//Overall styling for the body of the document
 body{
-    background-color: pink;
+    background-color: $secondaryColor;
 }
+
+// -----------NAVIGATION ------------------
+nav {
+    background-color: $secondaryColor;
+ ul li{
+     float: left;
+     width: 25%;
+ }
+}
+
+//Overall styling for the MAIN of the document
 h1{
-    color: black;
+    color: $primaryColor;
 }
+
+// Overall styling for the FOOTER of the document
+footer{
+    background-color: $primaryColor;
+}
+  /*--   Clearfix: Force an element not to collapse
+   Add this class to anything you want to stay open ---*/
+  .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
