@@ -10,26 +10,89 @@ html{
 
 //Overall styling for the body of the document
 body{
-    background-color: $secondaryColor;
+    background-color: $thirdColor;
+    font-weight: normal;  // this should be bold, but declared with a variable;
+    font-size: 16px;
 }
 
 // -----------NAVIGATION ------------------
 nav {
     background-color: $secondaryColor;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
  ul li{
      float: left;
      width: 25%;
+     border-right: 1px solid rgba(0,0,0,0.3);
  }
+    ul li:last-child {
+        border-right: none;
+    }
+    //Changing the display to block here makes the entire entire width (25%) that is used for the list item
+    // clickable. Without this only the width taken up by the text would be clickable
+    ul li a {
+        display: block;
+        text-align: center;  // set those clickable words in the  middle of the li space.
+        font-weight: bold;
+        padding: .5em 0; // .5 at top, 0 at bottom
+        color: $primaryColor;
+        text-decoration: none;
+        background-color: $secondaryColor;
+        transition: background 0.75s ease, color 0.75s ease;
+
+    }
+    ul li.active a{
+        background-color: darken($secondaryColor, 10%);
+    }
+    ul li a:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+    }
+
+}
+main{
+    figure.banner {width: 100%;}
+    figure.banner img {width: 100%;}
+
+    h1 {
+        font-size: 2rem;
+        margin: 1rem 0 0 $gutter;
+        color: $primaryColor;
+    }
 }
 
 //Overall styling for the MAIN of the document
-h1{
-    color: $primaryColor;
+hr{
+    height: 2px;
+    border: none;
+    margin: 0 $gutter;
+    background:linear-gradient(to right, rgb(109,136,183) 0%,rgb(184,198,223) 100%);
 }
+
+figure {
+.photo {width: 100%;}
+img {width: 100%;}
+}
+
+
+
+
+
+
 
 // Overall styling for the FOOTER of the document
 footer{
+    width: 100%;
     background-color: $primaryColor;
+
+    p{
+        text-align: center;
+        color: $secondaryColor;
+        padding: .75rem 0;
+        font-size: .9rem;
+    }
+    p a {
+        color: $secondaryColor;
+    }
 }
   /*--   Clearfix: Force an element not to collapse
    Add this class to anything you want to stay open ---*/
