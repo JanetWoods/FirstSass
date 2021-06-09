@@ -49,6 +49,7 @@ nav {
     }
 
 }
+//Overall styling for the MAIN of the document
 main{
     figure.banner {width: 100%;}
     figure.banner img {width: 100%;}
@@ -58,9 +59,21 @@ main{
         margin: 1rem 0 0 $gutter;
         color: $primaryColor;
     }
+    h2{
+        font-size: 1.5rem;
+        margin: .75rem 0 0 $gutter;
+        color: lighten($primaryColor, 10%);
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: lighten($primaryColor, 20%)
+    }
+    p {
+        line-height: 130%;
+        color: $fontColor;
+    }
 }
 
-//Overall styling for the MAIN of the document
 hr.fadeAway{
     background:linear-gradient(to right, rgb(109,136,183) 0%,rgb(184,198,223) 100%);
     height: 2px;
@@ -69,13 +82,16 @@ hr.fadeAway{
 }
 
 figure.photo {width: 100%-$gutterdbl;
-    margin: .5rem $gutter; border: red 1px solid;
+    margin: .5rem $gutter;
 }
 figure.photo img {width: 100%;}
 
 figure.photo figcaption{text-align: center; color: $primaryColor;}
 
-
+div.blog article {
+    margin: .5rem $gutter;
+    width: 100%-$gutterdbl;
+}
 
 
 

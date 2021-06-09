@@ -1,3 +1,22 @@
-body{
-    background-color: lightcoral;
+/* -------------NAVIGATION------------------*/
+
+nav{
+    ul{
+        margin-left:  $gutter;
+        border-left: 1px solid rgba(0,0,0,0.3);
+    }
+    ul li{
+        width:auto;
+    }
+    ul li:last-child{border-right: 1px solid rgba(0,0,0,0.3)};
+    ul li a {
+        padding: .5rem 1rem; // .5rem at the top and bottom, 1rem at the left and right.
+    }
+}
+
+/* -------------Main------------------*/
+main{
+    figure.photo {width: 25%-$gutterdbl;
+        float:left;
+}
 }
