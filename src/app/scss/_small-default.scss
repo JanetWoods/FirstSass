@@ -16,6 +16,8 @@ body{
 }
 
 // -----------NAVIGATION ------------------
+
+
 nav {
     background-color: $secondaryColor;
     border-bottom: 1px solid rgba(0,0,0,0.3);
@@ -51,8 +53,11 @@ nav {
 }
 /*---------------Header-------------------*/
 
-header{
+div#headerWrapper{
     background-color: $primaryColor;
+}
+header{
+
     color: $secondaryColor;
     padding: 1rem $gutter;
 
@@ -139,10 +144,12 @@ div.blog article {
 
 
 // Overall styling for the FOOTER of the document
+
+div#footerWrapper{
+    background-color: $primaryColor;
+}
 footer{
     width: 100%;
-    background-color: $primaryColor;
-
     p{
         text-align: center;
         color: $secondaryColor;
