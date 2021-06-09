@@ -3,9 +3,11 @@
 @import "./app/scss/variables";
 @import "./app/scss/small-default";
 
-@media only screen and (min-width: 560px){
+
+
+@media only screen and (min-width: 35rem){  // changed px triggers to rem.  If you zoom in on a big screen  browser when trigger points are expressed with rem you will eventually see the small screen version.   Not so when trigger points are measured in pixels(px).  This is because the breakpoints enlarge as the base font enlarges.
     @import "./app/scss/medium";
 }
-@media only screen and (min-width: 1140px){
+@media only screen and (min-width: 60rem){
     @import "./app/scss/large";
 }

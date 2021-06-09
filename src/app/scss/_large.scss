@@ -1,3 +1,17 @@
+/* --------------BODY-----------------*/
+// body{background-image: url();} //put image here to give texture to the blank area around the content in wrapper.
+
+ header, footer,main, nav{max-width: 60rem; margin: 0 auto;}
+
+
+
+div#wrapper {
+    max-width: 80rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px #000000;
+    background-color: #ffff; //make the background in the wrapper area white to prevent the texture of the surrounding area from 'bleeding' through.  It would be distracting in here with the content.
+}
+
 /* -------------NAVIGATION------------------*/
 
 nav{
@@ -18,5 +32,12 @@ nav{
 main{
     figure.photo {width: 25%-$gutterdbl;
         float:left;
-}
+    }
+    div.blog article{
+        float: left;
+        width: 33.33%-$gutterdbl;
+    }
+    div.blog article:nth-child(2n+1) {clear:none;}
+    div.blog article:nth-child(3n+1) {clear:left;}
+
 }
